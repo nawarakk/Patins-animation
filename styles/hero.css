@@ -208,3 +208,106 @@ section.hero {
         transform: translateY(-15rem);
     }
 }
+
+@media (width <= 49rem) {
+    section.hero{
+        max-width: 22.5rem;
+        margin-inline: auto;
+        padding: 0.75rem 1.5rem;
+        flex-direction: column-reverse;
+        overflow: hidden;
+        & h1{
+            max-width: 22.5rem;
+            margin-inline: auto;
+
+        }
+		& h1 div {
+			height: 2.5rem;
+		}
+
+		& h1 span {
+            display: inline-block;
+			animation: mobileSlideUp 6s infinite;
+            height:2.5rem
+		}
+
+        & .buttons{
+            flex-direction: column-reverse;
+            padding-bottom: 3rem;
+        }
+
+        & > div:nth-child(2){
+            width: 19.5rem;
+            height: 19.5rem;
+        }
+    }
+
+    @keyframes mobileSlideUp{
+    /*radical static*/
+    0%, 22%{
+        transform: translateY(0);
+    }
+    /*divertida in*/
+    23%{
+        transform: translateY(calc(-2.5rem - 15px));
+    }
+    25%{
+        transform: translateY(calc(-2.5rem + 10px));
+    }
+    27%{
+        transform: translateY(calc(-2.5rem - 5px));
+    }
+    29%{
+        transform: translateY(calc(-2.5rem + 5px));
+    }
+
+    /*divertida static*/
+    33%, 55%{
+        transform: translateY(-2.5rem);
+    }
+
+    /*saudável in*/
+    56%{
+        transform: translateY(calc(-5rem - 15px));
+    }
+    58%{
+        transform: translateY(calc(-5rem  + 10px));
+    }
+
+    60%{
+        transform: translateY(calc(-5rem  - 5px));
+    }   
+
+    62%{
+        transform: translateY(calc(-5rem  + 5px));
+    }
+    /*saudável static*/
+    66%, 88%{
+        transform: translateY(-5rem );
+    }
+    /*radical in*/
+    89%{
+        transform: translateY(calc(-7.5rem - 15px));
+    }
+    91%{
+        transform: translateY(calc(-7.5rem + 10px));
+    }
+
+    93%{
+        transform: translateY(calc(-7.5rem - 5px));
+    }   
+
+    95%{
+        transform: translateY(calc(-7.5rem + 5px));
+    }
+
+
+    /*radical static*/
+    100%{
+        transform: translateY(-7.5rem);
+    }
+}
+}
+
+
+

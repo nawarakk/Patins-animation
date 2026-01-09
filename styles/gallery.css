@@ -99,6 +99,28 @@ section.gallery{
     }
 }
 
+@media (width <= 49rem) {
+    section.gallery{
+        & .content{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center
+        }
+
+        & figure{
+            & > img{
+               width: 19.5rem; 
+               height: 16rem;
+               
+            }
+        }
+    }
+
+
+
+}
+
 @keyframes image-appear{
     from {
         transform: translateY(100%);

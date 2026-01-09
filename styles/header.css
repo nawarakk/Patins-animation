@@ -6,7 +6,7 @@ header.top {
     align-items: center;
     justify-content: space-between;
     margin-inline: auto;
-
+    overflow-x: hidden;
     img {
         width: 2rem;
         height: 2rem;
@@ -38,5 +38,13 @@ header.top {
         align-items: center;
         justify-content: center;
         border-radius: 50%;
+    }
+}
+
+@media (width <= 49rem) {
+    header.top {
+        max-width: 22.5rem;
+        margin-inline: auto;
+        padding: 0.75rem 1.5rem;
     }
 }
